@@ -1,0 +1,45 @@
+{
+  "name": "project-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.ts",
+  "scripts": {
+    "serve": "nodemon src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc --init",
+    "ts": "tslint --init",
+    "eslint": "eslint --init"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "@koa/cors": "^3.1.0",
+    "config.ts": "^1.0.0",
+    "dotenv": "^10.0.0",
+    "knex": "^0.95.6",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-joi-router": "^8.0.0",
+    "nodemon": "^2.0.7",
+    "ts-node": "^10.0.0",
+    "tslint": "^6.1.3",
+    "typescript": "^4.3.2"
+  },
+  "devDependencies": {
+    "@types/config": "0.0.38",
+    "@types/hapi__joi": "^17.1.6",
+    "@types/koa": "^2.13.3",
+    "@types/koa-joi-router": "^8.0.0",
+    "@types/koa__cors": "^3.0.2",
+    "@types/node": "^15.12.0",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "body-parser": "^1.19.0",
+    "config": "^3.3.6",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "pg": "^8.6.0"
+  }
+}
