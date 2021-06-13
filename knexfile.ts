@@ -1,7 +1,6 @@
 import config from 'config'
-import knex, { Knex } from "knex";
+module.exports = {
 
-const database: Knex.Config = {
   client: "pg",
   connection: {
     host : config.get('database.host'),
@@ -10,10 +9,13 @@ const database: Knex.Config = {
     database : config.get('database.db_name'),
     port: config.get('database.port')
   },
+  
   pool: {
     min: 2,
     max: 10,
   },
+  migrations: {
+    directory: "migrations",
+  },
 
 };
-export default knex(database);

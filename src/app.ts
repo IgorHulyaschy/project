@@ -5,12 +5,15 @@ import cors from '@koa/cors';
 import Router from 'koa-joi-router'
 
 import errorCatcher from './middlewares/errorCatcher'
+import userRouter from './account/router'
 
 export interface AppContext extends Context {
 }
 
 const app = new Koa();
 const router = Router();
+
+router.use(userRouter.middleware());
 router.get('/', async (ctx) => {
   ctx.body = 'It works!'
 })
